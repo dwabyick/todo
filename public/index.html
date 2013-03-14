@@ -34,7 +34,7 @@
         });
 
         $.getJSON('/tasks', function(tasks) {
-          $.each(tasks, function() { addTask(this); });
+          $.each(tasks, function() { addTask(this.task); });
         });
       });
     </script>
